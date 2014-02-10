@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA35B35B18A6C7EE008C4D35 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35B35A18A6C7EE008C4D35 /* CoreAudio.framework */; };
+		AA35B35D18A6CB82008C4D35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35B35C18A6CB82008C4D35 /* AVFoundation.framework */; };
+		AA35B36318A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA35B36218A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.m */; };
+		AA35B36518A85F2B008C4D35 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35B36418A85F2B008C4D35 /* AudioToolbox.framework */; };
+		AA35B36718A88444008C4D35 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35B36618A88444008C4D35 /* GLKit.framework */; };
+		AA3FD4AA18A2BB8B006B400B /* LWPPriorRecordingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD4A918A2BB8B006B400B /* LWPPriorRecordingTableViewController.m */; };
 		AADCA9761878AE56001362A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADCA9751878AE56001362A4 /* Foundation.framework */; };
 		AADCA9781878AE56001362A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADCA9771878AE56001362A4 /* CoreGraphics.framework */; };
 		AADCA97A1878AE56001362A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADCA9791878AE56001362A4 /* UIKit.framework */; };
@@ -22,6 +28,12 @@
 		AADCA9971878AE56001362A4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADCA97B1878AE56001362A4 /* CoreData.framework */; };
 		AADCA99F1878AE56001362A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AADCA99D1878AE56001362A4 /* InfoPlist.strings */; };
 		AADCA9A11878AE56001362A4 /* LewpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AADCA9A01878AE56001362A4 /* LewpTests.m */; };
+		AADCA9AB1878B03F001362A4 /* mainPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADCA9AA1878B03F001362A4 /* mainPhone.storyboard */; };
+		AADCA9AE1878CECD001362A4 /* LWPMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AADCA9AD1878CECD001362A4 /* LWPMainMenuViewController.m */; };
+		AADCA9B11878D100001362A4 /* LWPOptionsPaneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AADCA9B01878D100001362A4 /* LWPOptionsPaneViewController.m */; };
+		AADCA9B4187A0380001362A4 /* LWPEngineersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AADCA9B3187A0380001362A4 /* LWPEngineersViewController.m */; };
+		AAE08E7618A94C8F0033DF62 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE08E7518A94C8F0033DF62 /* SoundManager.m */; };
+		AAE08E7818A953740033DF62 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAE08E7718A953740033DF62 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA35B35A18A6C7EE008C4D35 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		AA35B35C18A6CB82008C4D35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AA35B36118A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPPriorRecordingsItemViewController.h; sourceTree = "<group>"; };
+		AA35B36218A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPPriorRecordingsItemViewController.m; sourceTree = "<group>"; };
+		AA35B36418A85F2B008C4D35 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AA35B36618A88444008C4D35 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		AA3FD4A818A2BB8B006B400B /* LWPPriorRecordingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPPriorRecordingTableViewController.h; sourceTree = "<group>"; };
+		AA3FD4A918A2BB8B006B400B /* LWPPriorRecordingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPPriorRecordingTableViewController.m; sourceTree = "<group>"; };
 		AADCA9721878AE56001362A4 /* Lewp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lewp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADCA9751878AE56001362A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AADCA9771878AE56001362A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +73,16 @@
 		AADCA99C1878AE56001362A4 /* LewpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LewpTests-Info.plist"; sourceTree = "<group>"; };
 		AADCA99E1878AE56001362A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AADCA9A01878AE56001362A4 /* LewpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LewpTests.m; sourceTree = "<group>"; };
+		AADCA9AA1878B03F001362A4 /* mainPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainPhone.storyboard; sourceTree = "<group>"; };
+		AADCA9AC1878CECD001362A4 /* LWPMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPMainMenuViewController.h; sourceTree = "<group>"; };
+		AADCA9AD1878CECD001362A4 /* LWPMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPMainMenuViewController.m; sourceTree = "<group>"; };
+		AADCA9AF1878D100001362A4 /* LWPOptionsPaneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPOptionsPaneViewController.h; sourceTree = "<group>"; };
+		AADCA9B01878D100001362A4 /* LWPOptionsPaneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPOptionsPaneViewController.m; sourceTree = "<group>"; };
+		AADCA9B2187A0380001362A4 /* LWPEngineersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPEngineersViewController.h; sourceTree = "<group>"; };
+		AADCA9B3187A0380001362A4 /* LWPEngineersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPEngineersViewController.m; sourceTree = "<group>"; };
+		AAE08E7418A94C8F0033DF62 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		AAE08E7518A94C8F0033DF62 /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		AAE08E7718A953740033DF62 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA35B36718A88444008C4D35 /* GLKit.framework in Frameworks */,
+				AA35B36518A85F2B008C4D35 /* AudioToolbox.framework in Frameworks */,
+				AA35B35D18A6CB82008C4D35 /* AVFoundation.framework in Frameworks */,
+				AA35B35B18A6C7EE008C4D35 /* CoreAudio.framework in Frameworks */,
 				AADCA9781878AE56001362A4 /* CoreGraphics.framework in Frameworks */,
 				AADCA97C1878AE56001362A4 /* CoreData.framework in Frameworks */,
 				AADCA97A1878AE56001362A4 /* UIKit.framework in Frameworks */,
@@ -103,6 +137,10 @@
 		AADCA9741878AE56001362A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA35B36618A88444008C4D35 /* GLKit.framework */,
+				AA35B36418A85F2B008C4D35 /* AudioToolbox.framework */,
+				AA35B35C18A6CB82008C4D35 /* AVFoundation.framework */,
+				AA35B35A18A6C7EE008C4D35 /* CoreAudio.framework */,
 				AADCA9751878AE56001362A4 /* Foundation.framework */,
 				AADCA9771878AE56001362A4 /* CoreGraphics.framework */,
 				AADCA9791878AE56001362A4 /* UIKit.framework */,
@@ -115,11 +153,25 @@
 		AADCA97D1878AE56001362A4 /* Lewp */ = {
 			isa = PBXGroup;
 			children = (
+				AADCA9AA1878B03F001362A4 /* mainPhone.storyboard */,
+				AA35B36118A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.h */,
+				AA35B36218A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.m */,
+				AA3FD4A818A2BB8B006B400B /* LWPPriorRecordingTableViewController.h */,
+				AA3FD4A918A2BB8B006B400B /* LWPPriorRecordingTableViewController.m */,
+				AADCA9B2187A0380001362A4 /* LWPEngineersViewController.h */,
+				AADCA9B3187A0380001362A4 /* LWPEngineersViewController.m */,
 				AADCA9861878AE56001362A4 /* LWPAppDelegate.h */,
 				AADCA9871878AE56001362A4 /* LWPAppDelegate.m */,
 				AADCA98C1878AE56001362A4 /* Images.xcassets */,
 				AADCA9891878AE56001362A4 /* Lewp.xcdatamodeld */,
+				AAE08E7418A94C8F0033DF62 /* SoundManager.h */,
+				AAE08E7518A94C8F0033DF62 /* SoundManager.m */,
 				AADCA97E1878AE56001362A4 /* Supporting Files */,
+				AADCA9AF1878D100001362A4 /* LWPOptionsPaneViewController.h */,
+				AADCA9B01878D100001362A4 /* LWPOptionsPaneViewController.m */,
+				AADCA9AC1878CECD001362A4 /* LWPMainMenuViewController.h */,
+				AADCA9AD1878CECD001362A4 /* LWPMainMenuViewController.m */,
+				AAE08E7718A953740033DF62 /* Settings.bundle */,
 			);
 			path = Lewp;
 			sourceTree = "<group>";
@@ -229,8 +281,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE08E7818A953740033DF62 /* Settings.bundle in Resources */,
 				AADCA9821878AE56001362A4 /* InfoPlist.strings in Resources */,
 				AADCA98D1878AE56001362A4 /* Images.xcassets in Resources */,
+				AADCA9AB1878B03F001362A4 /* mainPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +305,12 @@
 			files = (
 				AADCA9881878AE56001362A4 /* LWPAppDelegate.m in Sources */,
 				AADCA98B1878AE56001362A4 /* Lewp.xcdatamodeld in Sources */,
+				AAE08E7618A94C8F0033DF62 /* SoundManager.m in Sources */,
+				AADCA9AE1878CECD001362A4 /* LWPMainMenuViewController.m in Sources */,
+				AADCA9B4187A0380001362A4 /* LWPEngineersViewController.m in Sources */,
+				AA3FD4AA18A2BB8B006B400B /* LWPPriorRecordingTableViewController.m in Sources */,
+				AA35B36318A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.m in Sources */,
+				AADCA9B11878D100001362A4 /* LWPOptionsPaneViewController.m in Sources */,
 				AADCA9841878AE56001362A4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +514,7 @@
 				AADCA9A61878AE56001362A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AADCA9A71878AE56001362A4 /* Build configuration list for PBXNativeTarget "LewpTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +523,7 @@
 				AADCA9A91878AE56001362A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
