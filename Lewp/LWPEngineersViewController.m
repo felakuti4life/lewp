@@ -13,7 +13,6 @@
 @end
 
 @implementation LWPEngineersViewController
-@synthesize adviceList;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,9 +27,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    if (self.adviceList.count) {
-        NSUInteger idx = arc4random_uniform(self.adviceList.count);
-        [self.adviceLabel setText:adviceList[idx]];
+    if ([LWPConstants adviceList].count) {
+        NSUInteger idx = arc4random_uniform([LWPConstants adviceList].count);
+        [self.adviceLabel setText:[LWPConstants adviceList][idx]];
     }
 }
 

@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SoundManager.h"
 
 @interface LWPConstants : NSObject
-FOUNDATION_EXPORT NSArray *const adviceList;
+
++(NSArray*) adviceList;
+
++(Sound*) mainTheme;
+
 @end
