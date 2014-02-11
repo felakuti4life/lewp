@@ -34,6 +34,7 @@
 		AADCA9B4187A0380001362A4 /* LWPEngineersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AADCA9B3187A0380001362A4 /* LWPEngineersViewController.m */; };
 		AAE08E7618A94C8F0033DF62 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE08E7518A94C8F0033DF62 /* SoundManager.m */; };
 		AAE08E7818A953740033DF62 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAE08E7718A953740033DF62 /* Settings.bundle */; };
+		AAE08E7C18AA81DC0033DF62 /* LWPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE08E7B18AA81DC0033DF62 /* LWPConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		AAE08E7418A94C8F0033DF62 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
 		AAE08E7518A94C8F0033DF62 /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
 		AAE08E7718A953740033DF62 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		AAE08E7A18AA81DC0033DF62 /* LWPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPConstants.h; sourceTree = "<group>"; };
+		AAE08E7B18AA81DC0033DF62 /* LWPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +165,7 @@
 				AADCA9B3187A0380001362A4 /* LWPEngineersViewController.m */,
 				AADCA9861878AE56001362A4 /* LWPAppDelegate.h */,
 				AADCA9871878AE56001362A4 /* LWPAppDelegate.m */,
-				AADCA98C1878AE56001362A4 /* Images.xcassets */,
-				AADCA9891878AE56001362A4 /* Lewp.xcdatamodeld */,
+				AAE08E7918AA80880033DF62 /* Resources */,
 				AAE08E7418A94C8F0033DF62 /* SoundManager.h */,
 				AAE08E7518A94C8F0033DF62 /* SoundManager.m */,
 				AADCA97E1878AE56001362A4 /* Supporting Files */,
@@ -171,7 +173,8 @@
 				AADCA9B01878D100001362A4 /* LWPOptionsPaneViewController.m */,
 				AADCA9AC1878CECD001362A4 /* LWPMainMenuViewController.h */,
 				AADCA9AD1878CECD001362A4 /* LWPMainMenuViewController.m */,
-				AAE08E7718A953740033DF62 /* Settings.bundle */,
+				AAE08E7A18AA81DC0033DF62 /* LWPConstants.h */,
+				AAE08E7B18AA81DC0033DF62 /* LWPConstants.m */,
 			);
 			path = Lewp;
 			sourceTree = "<group>";
@@ -203,6 +206,16 @@
 				AADCA99D1878AE56001362A4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAE08E7918AA80880033DF62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAE08E7718A953740033DF62 /* Settings.bundle */,
+				AADCA98C1878AE56001362A4 /* Images.xcassets */,
+				AADCA9891878AE56001362A4 /* Lewp.xcdatamodeld */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +319,7 @@
 				AADCA9881878AE56001362A4 /* LWPAppDelegate.m in Sources */,
 				AADCA98B1878AE56001362A4 /* Lewp.xcdatamodeld in Sources */,
 				AAE08E7618A94C8F0033DF62 /* SoundManager.m in Sources */,
+				AAE08E7C18AA81DC0033DF62 /* LWPConstants.m in Sources */,
 				AADCA9AE1878CECD001362A4 /* LWPMainMenuViewController.m in Sources */,
 				AADCA9B4187A0380001362A4 /* LWPEngineersViewController.m in Sources */,
 				AA3FD4AA18A2BB8B006B400B /* LWPPriorRecordingTableViewController.m in Sources */,

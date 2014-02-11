@@ -9,7 +9,7 @@
 #import "LWPPriorRecordingTableViewController.h"
 
 @interface LWPPriorRecordingTableViewController ()
-
+@property NSArray *songList;
 @end
 
 @implementation LWPPriorRecordingTableViewController
@@ -29,6 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _songList = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:@"Documents/Songs" error:0];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -47,10 +48,10 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+    //#warning Potentially incomplete method implementation.
     //TODO: create array of Songs
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
