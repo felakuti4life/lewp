@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SoundManager.h"
+#import "LWPConstants.h"
 
 @interface LWPMainMenuViewController : UIViewController
 

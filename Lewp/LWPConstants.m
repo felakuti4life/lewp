@@ -25,7 +25,7 @@
 }
 
 +(Sound*) mainTheme{
-    return [Sound soundWithContentsOfFile:@"Library/sound/mainTheme.caf"];
+    return [Sound soundWithContentsOfFile:@"Lewp/mainTheme.caf"];
 }
 
 @end

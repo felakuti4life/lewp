@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *tempoLabel;
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 
-@property int tempo;
+@property NSUInteger tempo;
 @property NSString *userName;
 @end
 
@@ -23,7 +23,7 @@
 {
     if(sender!= self.doneButton) return;
     else{
-        self.tempo = (int) self.tempoSlider.value;
+        self.tempo = (NSUInteger) self.tempoSlider.value;
         self.userName = self.userNameTextField.text;
     }
 }

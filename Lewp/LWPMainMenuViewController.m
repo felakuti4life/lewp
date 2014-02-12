@@ -32,7 +32,7 @@
 	// Do any additional setup after loading the view.
     [SoundManager sharedManager].allowsBackgroundMusic = YES;
     [[SoundManager sharedManager] prepareToPlay];
-    [[SoundManager sharedManager] playMusic:@"theme" looping:YES];
+    [[SoundManager sharedManager] playMusic:[LWPConstants mainTheme] looping:YES];
 }
 
 - (void)didReceiveMemoryWarning

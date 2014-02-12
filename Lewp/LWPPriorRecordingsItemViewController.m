@@ -29,7 +29,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     if([[SoundManager sharedManager] isPlayingMusic]) [[SoundManager sharedManager] stopMusic];
-    [[SoundManager sharedManager] playMusic:[LWPConstants mainTheme] looping:YES];
+    [[SoundManager sharedManager] playMusic:[LWPConstants mainTheme] looping:YES]; //PLACEHOLDER: create dynamic sound pointer
 }
 
 - (void)didReceiveMemoryWarning
