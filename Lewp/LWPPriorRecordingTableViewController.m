@@ -65,8 +65,9 @@
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    #warning need to create cell array
     // Configure the cell...
+    Sound *itemSong = [Sound soundWithContentsOfFile:[self.songList objectAtIndex:indexPath.row]];
+    cell.textLabel.text = itemSong.name;
     
     return cell;
 }
