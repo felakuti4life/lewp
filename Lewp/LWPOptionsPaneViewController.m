@@ -14,8 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *tempoLabel;
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 
-@property NSUInteger tempo;
-@property NSString *userName;
 @end
 
 @implementation LWPOptionsPaneViewController
@@ -23,8 +21,8 @@
 {
     if(sender!= self.doneButton) return;
     else{
-        self.tempo = (NSUInteger) self.tempoSlider.value;
-        self.userName = self.userNameTextField.text;
+        [LWPScheduler masterScheduler].tempo = (NSUInteger) self.tempoSlider.value;
+        [LWPScheduler masterScheduler].userName = self.userNameTextField.text;
     }
 }
 

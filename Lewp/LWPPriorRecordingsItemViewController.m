@@ -9,6 +9,10 @@
 #import "LWPPriorRecordingsItemViewController.h"
 
 @interface LWPPriorRecordingsItemViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UIButton *previousButton;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
+@property (weak, nonatomic) IBOutlet UIButton *shareButton;
 
 
 @end

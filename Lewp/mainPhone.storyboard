@@ -439,7 +439,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4f-eq-vqZ">
-                                <rect key="frame" x="261" y="270" width="37" height="30"/>
+                                <rect key="frame" x="266" y="270" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="PLAY">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -459,12 +459,25 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vQ8-zP-iOK">
+                                <rect key="frame" x="18" y="220" width="532" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.68399711279999997" green="0.0" blue="0.01612435655" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.98594826459999996" green="0.50050399140000001" blue="0.53399636399999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="0.099999384679999997" blue="0.13920304159999999" alpha="1" colorSpace="calibratedRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="Z7P-X8-vyM"/>
+                    <connections>
+                        <outlet property="nextButton" destination="E8k-j3-mJa" id="Lzu-rH-x6e"/>
+                        <outlet property="playButton" destination="K4f-eq-vqZ" id="R3N-RK-cfp"/>
+                        <outlet property="previousButton" destination="LmE-TY-5e0" id="fKb-cK-Zgq"/>
+                        <outlet property="shareButton" destination="kwW-gF-7Zf" id="UPZ-P9-L7V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgw-7L-Jb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

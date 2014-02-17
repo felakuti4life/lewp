@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LWPScheduler.h"
 
 @interface LWPOptionsPaneViewController : UIViewController
 
