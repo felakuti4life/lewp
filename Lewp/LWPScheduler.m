@@ -10,15 +10,17 @@
 
 @implementation LWPMeasureBuilder
 -(LWPMeasureBuilder*)initWithInstrumentOrder:(NSArray *)instrumentOrder{
-    self.instrumentOrder = instrumentOrder;
-    self.measureLengthInMS = [[NSNumber alloc] initWithDouble:((1/[LWPScheduler masterScheduler].tempo)/4)];
-    
+    self = [super init];
+    if(self){
+        self.instrumentOrder = instrumentOrder;
+        self.measureLengthInMS = [[NSNumber alloc] initWithDouble:((1/[LWPScheduler masterScheduler].tempo)/4)];
+    }
     return self;
 }
 
--(void)recordAndMixdownLayer{
+-(BOOL)recordAndMixdownLayer{
     
-    
+    return YES;
 }
 @end
 

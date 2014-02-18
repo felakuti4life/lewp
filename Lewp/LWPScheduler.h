@@ -8,17 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+#import "LWPInstrumentArrays.h"
 
 @interface LWPMeasureBuilder : NSObject
 @property NSNumber *measureLengthInMS;
 @property NSArray* instrumentOrder;
-@property AVAudioRecorder *layerRecorder;
 
 -(LWPMeasureBuilder *)initWithInstrumentOrder:(NSArray*) instrumentOrder;
--(void)startRecordingSession;
--(void)mixdownLayers;
--(void)recordAndMixdownLayer;
-
+-(BOOL)startRecordingSession;
+-(BOOL)combineLayers;
+-(BOOL)recordAndMixdownLayer;
 
 @end
 
@@ -28,6 +27,11 @@
 
 @property BOOL isRunning;
 @property BOOL isRecording;
+
+@property AVAudioRecorder *recorder;
+@property AVAudioPlayer *player;
+
+
 
 +(LWPScheduler*) masterScheduler;
 -(void)startPlaying;

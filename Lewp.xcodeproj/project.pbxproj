@@ -15,6 +15,8 @@
 		AA35B36718A88444008C4D35 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35B36618A88444008C4D35 /* GLKit.framework */; };
 		AA3FD4AA18A2BB8B006B400B /* LWPPriorRecordingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD4A918A2BB8B006B400B /* LWPPriorRecordingTableViewController.m */; };
 		AA8A309418B27483005FBD0F /* LWPScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8A309318B27483005FBD0F /* LWPScheduler.m */; };
+		AA8A309718B3B89A005FBD0F /* LWPRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8A309618B3B89A005FBD0F /* LWPRecorderViewController.m */; };
+		AA8A309A18B3BC15005FBD0F /* LWPInstrumentArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8A309918B3BC15005FBD0F /* LWPInstrumentArrays.m */; };
 		AADCA9761878AE56001362A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADCA9751878AE56001362A4 /* Foundation.framework */; };
 		AADCA9781878AE56001362A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADCA9771878AE56001362A4 /* CoreGraphics.framework */; };
 		AADCA97A1878AE56001362A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADCA9791878AE56001362A4 /* UIKit.framework */; };
@@ -61,6 +63,10 @@
 		AA3FD4A918A2BB8B006B400B /* LWPPriorRecordingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPPriorRecordingTableViewController.m; sourceTree = "<group>"; };
 		AA8A309218B27483005FBD0F /* LWPScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPScheduler.h; sourceTree = "<group>"; };
 		AA8A309318B27483005FBD0F /* LWPScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPScheduler.m; sourceTree = "<group>"; };
+		AA8A309518B3B89A005FBD0F /* LWPRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPRecorderViewController.h; sourceTree = "<group>"; };
+		AA8A309618B3B89A005FBD0F /* LWPRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPRecorderViewController.m; sourceTree = "<group>"; };
+		AA8A309818B3BC15005FBD0F /* LWPInstrumentArrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPInstrumentArrays.h; sourceTree = "<group>"; };
+		AA8A309918B3BC15005FBD0F /* LWPInstrumentArrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPInstrumentArrays.m; sourceTree = "<group>"; };
 		AADCA9721878AE56001362A4 /* Lewp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lewp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADCA9751878AE56001362A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AADCA9771878AE56001362A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +129,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA8A309B18B3CB3B005FBD0F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA8A309518B3B89A005FBD0F /* LWPRecorderViewController.h */,
+				AA8A309618B3B89A005FBD0F /* LWPRecorderViewController.m */,
+				AA35B36118A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.h */,
+				AA35B36218A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.m */,
+				AA3FD4A818A2BB8B006B400B /* LWPPriorRecordingTableViewController.h */,
+				AA3FD4A918A2BB8B006B400B /* LWPPriorRecordingTableViewController.m */,
+				AADCA9B2187A0380001362A4 /* LWPEngineersViewController.h */,
+				AADCA9B3187A0380001362A4 /* LWPEngineersViewController.m */,
+				AADCA9AF1878D100001362A4 /* LWPOptionsPaneViewController.h */,
+				AADCA9B01878D100001362A4 /* LWPOptionsPaneViewController.m */,
+				AADCA9AC1878CECD001362A4 /* LWPMainMenuViewController.h */,
+				AADCA9AD1878CECD001362A4 /* LWPMainMenuViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		AADCA9691878AE56001362A4 = {
 			isa = PBXGroup;
 			children = (
@@ -163,26 +188,19 @@
 			isa = PBXGroup;
 			children = (
 				AADCA9AA1878B03F001362A4 /* mainPhone.storyboard */,
-				AA35B36118A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.h */,
-				AA35B36218A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.m */,
-				AA3FD4A818A2BB8B006B400B /* LWPPriorRecordingTableViewController.h */,
-				AA3FD4A918A2BB8B006B400B /* LWPPriorRecordingTableViewController.m */,
-				AADCA9B2187A0380001362A4 /* LWPEngineersViewController.h */,
-				AADCA9B3187A0380001362A4 /* LWPEngineersViewController.m */,
+				AA8A309B18B3CB3B005FBD0F /* ViewControllers */,
 				AADCA9861878AE56001362A4 /* LWPAppDelegate.h */,
 				AADCA9871878AE56001362A4 /* LWPAppDelegate.m */,
 				AAE08E7918AA80880033DF62 /* Resources */,
 				AAE08E7418A94C8F0033DF62 /* SoundManager.h */,
 				AAE08E7518A94C8F0033DF62 /* SoundManager.m */,
 				AADCA97E1878AE56001362A4 /* Supporting Files */,
-				AADCA9AF1878D100001362A4 /* LWPOptionsPaneViewController.h */,
-				AADCA9B01878D100001362A4 /* LWPOptionsPaneViewController.m */,
 				AA8A309218B27483005FBD0F /* LWPScheduler.h */,
 				AA8A309318B27483005FBD0F /* LWPScheduler.m */,
-				AADCA9AC1878CECD001362A4 /* LWPMainMenuViewController.h */,
-				AADCA9AD1878CECD001362A4 /* LWPMainMenuViewController.m */,
 				AAE08E7A18AA81DC0033DF62 /* LWPConstants.h */,
 				AAE08E7B18AA81DC0033DF62 /* LWPConstants.m */,
+				AA8A309818B3BC15005FBD0F /* LWPInstrumentArrays.h */,
+				AA8A309918B3BC15005FBD0F /* LWPInstrumentArrays.m */,
 			);
 			path = Lewp;
 			sourceTree = "<group>";
@@ -331,9 +349,11 @@
 				AAE08E7C18AA81DC0033DF62 /* LWPConstants.m in Sources */,
 				AADCA9AE1878CECD001362A4 /* LWPMainMenuViewController.m in Sources */,
 				AADCA9B4187A0380001362A4 /* LWPEngineersViewController.m in Sources */,
+				AA8A309718B3B89A005FBD0F /* LWPRecorderViewController.m in Sources */,
 				AA3FD4AA18A2BB8B006B400B /* LWPPriorRecordingTableViewController.m in Sources */,
 				AA35B36318A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.m in Sources */,
 				AADCA9B11878D100001362A4 /* LWPOptionsPaneViewController.m in Sources */,
+				AA8A309A18B3BC15005FBD0F /* LWPInstrumentArrays.m in Sources */,
 				AA8A309418B27483005FBD0F /* LWPScheduler.m in Sources */,
 				AADCA9841878AE56001362A4 /* main.m in Sources */,
 			);
