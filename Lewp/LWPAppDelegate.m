@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor redColor];
     [self.window makeKeyAndVisible];
+    //[Crittercism enableWithAppID:@"53237f6f647e7565b7000001"];
     return YES;
 }
 

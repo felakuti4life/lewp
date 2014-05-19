@@ -26,7 +26,7 @@
 
 
 +(Sound*) mainTheme{
-    return [Sound soundWithContentsOfFile:@"mainTheme.caf"];
+    return [Sound soundWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/mainTheme.caf"]];
 }
 
 @end

@@ -14,9 +14,22 @@
 		AA35B36518A85F2B008C4D35 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35B36418A85F2B008C4D35 /* AudioToolbox.framework */; };
 		AA35B36718A88444008C4D35 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35B36618A88444008C4D35 /* GLKit.framework */; };
 		AA3FD4AA18A2BB8B006B400B /* LWPPriorRecordingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD4A918A2BB8B006B400B /* LWPPriorRecordingTableViewController.m */; };
+		AA7AC5AE18F0ABE400BEE261 /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7AC5AD18F0ABB000BEE261 /* libTheAmazingAudioEngine.a */; };
+		AA7AC5B018F0AC0200BEE261 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7AC5AF18F0AC0200BEE261 /* Accelerate.framework */; };
+		AA7AC5C318F0B00600BEE261 /* AEExpanderFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7AC5B218F0B00500BEE261 /* AEExpanderFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AA7AC5C418F0B00600BEE261 /* AELimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7AC5B418F0B00500BEE261 /* AELimiter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AA7AC5C518F0B00600BEE261 /* AELimiterFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7AC5B618F0B00500BEE261 /* AELimiterFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AA7AC5C618F0B00600BEE261 /* AEMixerBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7AC5B818F0B00500BEE261 /* AEMixerBuffer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AA7AC5C718F0B00600BEE261 /* AEPlaythroughChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7AC5BA18F0B00500BEE261 /* AEPlaythroughChannel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AA7AC5C818F0B00600BEE261 /* AERecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7AC5BC18F0B00500BEE261 /* AERecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AA7AC5C918F0B00600BEE261 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = AA7AC5BE18F0B00600BEE261 /* README.markdown */; };
+		AA7AC5CA18F0B00600BEE261 /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = AA7AC5BF18F0B00600BEE261 /* TPCircularBuffer+AudioBufferList.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AA7AC5CB18F0B00600BEE261 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = AA7AC5C118F0B00600BEE261 /* TPCircularBuffer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AA8A309418B27483005FBD0F /* LWPScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8A309318B27483005FBD0F /* LWPScheduler.m */; };
 		AA8A309718B3B89A005FBD0F /* LWPRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8A309618B3B89A005FBD0F /* LWPRecorderViewController.m */; };
 		AA8A309A18B3BC15005FBD0F /* LWPInstrumentArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8A309918B3BC15005FBD0F /* LWPInstrumentArrays.m */; };
+		AAB8752718D753780055E0B9 /* libCrittercism_v4_3_2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB8752518D753780055E0B9 /* libCrittercism_v4_3_2.a */; };
+		AAB8752818D753780055E0B9 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = AAB8752618D753780055E0B9 /* dsym_upload.sh */; };
 		AADCA9761878AE56001362A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADCA9751878AE56001362A4 /* Foundation.framework */; };
 		AADCA9781878AE56001362A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADCA9771878AE56001362A4 /* CoreGraphics.framework */; };
 		AADCA97A1878AE56001362A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADCA9791878AE56001362A4 /* UIKit.framework */; };
@@ -42,6 +55,76 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AA5FFAE618D7839900894ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5FFADB18D7839800894ED0 /* JSONKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6803523148F6D22008A51BA;
+			remoteInfo = libJSONKit;
+		};
+		AA5FFAE818D7839900894ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5FFADB18D7839800894ED0 /* JSONKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6AE0202148F825C0004909F;
+			remoteInfo = JSONKit.framework;
+		};
+		AA5FFAEC18D7839900894ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5FFAD818D7839800894ED0 /* OAuth2Client.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 942FFCD612315E0A00E6C65E;
+			remoteInfo = OAuth2Client.framework;
+		};
+		AA5FFAEE18D7839900894ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5FFAD818D7839800894ED0 /* OAuth2Client.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = OAuth2Client;
+		};
+		AA5FFAF118D7839900894ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5FFADE18D7839800894ED0 /* OHAttributedLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62728FA148F70DF00314599;
+			remoteInfo = OHAttributedLabel;
+		};
+		AA5FFAF518D7839900894ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5FFAD518D7839800894ED0 /* SoundCloudAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94535F86123FAFDF00BD668A;
+			remoteInfo = SoundCloudAPI.framework;
+		};
+		AA5FFAF718D7839900894ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5FFAD518D7839800894ED0 /* SoundCloudAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SoundCloudAPI;
+		};
+		AA5FFAFB18D7839900894ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5FFAE118D7839800894ED0 /* SoundCloudUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6EF8C6113F929D700B20B40;
+			remoteInfo = libSoundCloudUI;
+		};
+		AA5FFAFD18D7839900894ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5FFAE118D7839800894ED0 /* SoundCloudUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62E0CE5148FB27100BE8F14;
+			remoteInfo = SoundCloudUI.framework;
+		};
+		AA7AC5AC18F0ABB000BEE261 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7AC59F18F0ABB000BEE261 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C215CEC1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
+		};
 		AADCA9981878AE56001362A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AADCA96A1878AE56001362A4 /* Project object */;
@@ -61,12 +144,41 @@
 		AA35B36618A88444008C4D35 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		AA3FD4A818A2BB8B006B400B /* LWPPriorRecordingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPPriorRecordingTableViewController.h; sourceTree = "<group>"; };
 		AA3FD4A918A2BB8B006B400B /* LWPPriorRecordingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPPriorRecordingTableViewController.m; sourceTree = "<group>"; };
+		AA5FFAD518D7839800894ED0 /* SoundCloudAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoundCloudAPI.xcodeproj; path = CocoaSoundCloudAPI/SoundCloudAPI.xcodeproj; sourceTree = "<group>"; };
+		AA5FFAD818D7839800894ED0 /* OAuth2Client.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2Client.xcodeproj; path = OAuth2Client/OAuth2Client.xcodeproj; sourceTree = "<group>"; };
+		AA5FFADB18D7839800894ED0 /* JSONKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONKit.xcodeproj; path = JSONKit/JSONKit.xcodeproj; sourceTree = "<group>"; };
+		AA5FFADE18D7839800894ED0 /* OHAttributedLabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OHAttributedLabel.xcodeproj; path = OHAttributedLabel/OHAttributedLabel.xcodeproj; sourceTree = "<group>"; };
+		AA5FFAE118D7839800894ED0 /* SoundCloudUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoundCloudUI.xcodeproj; path = CocoaSoundCloudUI/SoundCloudUI.xcodeproj; sourceTree = "<group>"; };
+		AA7AC59F18F0ABB000BEE261 /* TheAmazingAudioEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheAmazingAudioEngine.xcodeproj; path = TheAmazingAudioEngine/TheAmazingAudioEngine.xcodeproj; sourceTree = SOURCE_ROOT; };
+		AA7AC5AF18F0AC0200BEE261 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		AA7AC5B118F0B00500BEE261 /* AEExpanderFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AEExpanderFilter.h; path = Lewp/AEExpanderFilter.h; sourceTree = "<group>"; };
+		AA7AC5B218F0B00500BEE261 /* AEExpanderFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AEExpanderFilter.m; path = Lewp/AEExpanderFilter.m; sourceTree = "<group>"; };
+		AA7AC5B318F0B00500BEE261 /* AELimiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AELimiter.h; path = Lewp/AELimiter.h; sourceTree = "<group>"; };
+		AA7AC5B418F0B00500BEE261 /* AELimiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AELimiter.m; path = Lewp/AELimiter.m; sourceTree = "<group>"; };
+		AA7AC5B518F0B00500BEE261 /* AELimiterFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AELimiterFilter.h; path = Lewp/AELimiterFilter.h; sourceTree = "<group>"; };
+		AA7AC5B618F0B00500BEE261 /* AELimiterFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AELimiterFilter.m; path = Lewp/AELimiterFilter.m; sourceTree = "<group>"; };
+		AA7AC5B718F0B00500BEE261 /* AEMixerBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AEMixerBuffer.h; path = Lewp/AEMixerBuffer.h; sourceTree = "<group>"; };
+		AA7AC5B818F0B00500BEE261 /* AEMixerBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AEMixerBuffer.m; path = Lewp/AEMixerBuffer.m; sourceTree = "<group>"; };
+		AA7AC5B918F0B00500BEE261 /* AEPlaythroughChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AEPlaythroughChannel.h; path = Lewp/AEPlaythroughChannel.h; sourceTree = "<group>"; };
+		AA7AC5BA18F0B00500BEE261 /* AEPlaythroughChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AEPlaythroughChannel.m; path = Lewp/AEPlaythroughChannel.m; sourceTree = "<group>"; };
+		AA7AC5BB18F0B00500BEE261 /* AERecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AERecorder.h; path = Lewp/AERecorder.h; sourceTree = "<group>"; };
+		AA7AC5BC18F0B00500BEE261 /* AERecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AERecorder.m; path = Lewp/AERecorder.m; sourceTree = "<group>"; };
+		AA7AC5BE18F0B00600BEE261 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		AA7AC5BF18F0B00600BEE261 /* TPCircularBuffer+AudioBufferList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "TPCircularBuffer+AudioBufferList.c"; sourceTree = "<group>"; };
+		AA7AC5C018F0B00600BEE261 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		AA7AC5C118F0B00600BEE261 /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
+		AA7AC5C218F0B00600BEE261 /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
 		AA8A309218B27483005FBD0F /* LWPScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPScheduler.h; sourceTree = "<group>"; };
 		AA8A309318B27483005FBD0F /* LWPScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPScheduler.m; sourceTree = "<group>"; };
 		AA8A309518B3B89A005FBD0F /* LWPRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPRecorderViewController.h; sourceTree = "<group>"; };
 		AA8A309618B3B89A005FBD0F /* LWPRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPRecorderViewController.m; sourceTree = "<group>"; };
 		AA8A309818B3BC15005FBD0F /* LWPInstrumentArrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPInstrumentArrays.h; sourceTree = "<group>"; };
 		AA8A309918B3BC15005FBD0F /* LWPInstrumentArrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPInstrumentArrays.m; sourceTree = "<group>"; };
+		AAB8752218D753780055E0B9 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
+		AAB8752318D753780055E0B9 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
+		AAB8752418D753780055E0B9 /* CrittercismDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismDelegate.h; sourceTree = "<group>"; };
+		AAB8752518D753780055E0B9 /* libCrittercism_v4_3_2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercism_v4_3_2.a; sourceTree = "<group>"; };
+		AAB8752618D753780055E0B9 /* dsym_upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dsym_upload.sh; sourceTree = "<group>"; };
 		AADCA9721878AE56001362A4 /* Lewp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lewp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADCA9751878AE56001362A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AADCA9771878AE56001362A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,6 +216,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7AC5B018F0AC0200BEE261 /* Accelerate.framework in Frameworks */,
+				AA7AC5AE18F0ABE400BEE261 /* libTheAmazingAudioEngine.a in Frameworks */,
+				AAB8752718D753780055E0B9 /* libCrittercism_v4_3_2.a in Frameworks */,
 				AA35B36718A88444008C4D35 /* GLKit.framework in Frameworks */,
 				AA35B36518A85F2B008C4D35 /* AudioToolbox.framework in Frameworks */,
 				AA35B35D18A6CB82008C4D35 /* AVFoundation.framework in Frameworks */,
@@ -129,6 +244,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA5FFAD618D7839800894ED0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5FFAF618D7839900894ED0 /* SoundCloudAPI.framework */,
+				AA5FFAF818D7839900894ED0 /* libSoundCloudAPI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA5FFAD918D7839800894ED0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5FFAED18D7839900894ED0 /* OAuth2Client.framework */,
+				AA5FFAEF18D7839900894ED0 /* libOAuth2Client.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA5FFADC18D7839800894ED0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5FFAE718D7839900894ED0 /* libJSONKit.a */,
+				AA5FFAE918D7839900894ED0 /* JSONKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA5FFADF18D7839800894ED0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5FFAF218D7839900894ED0 /* libOHAttributedLabel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA5FFAE218D7839800894ED0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5FFAFC18D7839900894ED0 /* libSoundCloudUI.a */,
+				AA5FFAFE18D7839900894ED0 /* SoundCloudUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA7AC5A018F0ABB000BEE261 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA7AC5AD18F0ABB000BEE261 /* libTheAmazingAudioEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA7AC5BD18F0B00500BEE261 /* TPCircularBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				AA7AC5BE18F0B00600BEE261 /* README.markdown */,
+				AA7AC5BF18F0B00600BEE261 /* TPCircularBuffer+AudioBufferList.c */,
+				AA7AC5C018F0B00600BEE261 /* TPCircularBuffer+AudioBufferList.h */,
+				AA7AC5C118F0B00600BEE261 /* TPCircularBuffer.c */,
+				AA7AC5C218F0B00600BEE261 /* TPCircularBuffer.h */,
+			);
+			name = TPCircularBuffer;
+			path = Lewp/TPCircularBuffer;
+			sourceTree = "<group>";
+		};
+		AA7AC5CC18F0B00B00BEE261 /* Audio engine */ = {
+			isa = PBXGroup;
+			children = (
+				AA7AC5B118F0B00500BEE261 /* AEExpanderFilter.h */,
+				AA7AC5B218F0B00500BEE261 /* AEExpanderFilter.m */,
+				AA7AC5B318F0B00500BEE261 /* AELimiter.h */,
+				AA7AC5B418F0B00500BEE261 /* AELimiter.m */,
+				AA7AC5B518F0B00500BEE261 /* AELimiterFilter.h */,
+				AA7AC5B618F0B00500BEE261 /* AELimiterFilter.m */,
+				AA7AC5B718F0B00500BEE261 /* AEMixerBuffer.h */,
+				AA7AC5B818F0B00500BEE261 /* AEMixerBuffer.m */,
+				AA7AC5B918F0B00500BEE261 /* AEPlaythroughChannel.h */,
+				AA7AC5BA18F0B00500BEE261 /* AEPlaythroughChannel.m */,
+				AA7AC5BB18F0B00500BEE261 /* AERecorder.h */,
+				AA7AC5BC18F0B00500BEE261 /* AERecorder.m */,
+				AA7AC5BD18F0B00500BEE261 /* TPCircularBuffer */,
+			);
+			name = "Audio engine";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		AA8A309B18B3CB3B005FBD0F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,9 +349,26 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		AAB8752018D751E50055E0B9 /* Crittercism */ = {
+			isa = PBXGroup;
+			children = (
+				AAB8752218D753780055E0B9 /* CRFilter.h */,
+				AAB8752318D753780055E0B9 /* Crittercism.h */,
+				AAB8752418D753780055E0B9 /* CrittercismDelegate.h */,
+				AAB8752518D753780055E0B9 /* libCrittercism_v4_3_2.a */,
+				AAB8752618D753780055E0B9 /* dsym_upload.sh */,
+			);
+			name = Crittercism;
+			sourceTree = "<group>";
+		};
 		AADCA9691878AE56001362A4 = {
 			isa = PBXGroup;
 			children = (
+				AA5FFAD518D7839800894ED0 /* SoundCloudAPI.xcodeproj */,
+				AA5FFAD818D7839800894ED0 /* OAuth2Client.xcodeproj */,
+				AA5FFADB18D7839800894ED0 /* JSONKit.xcodeproj */,
+				AA5FFADE18D7839800894ED0 /* OHAttributedLabel.xcodeproj */,
+				AA5FFAE118D7839800894ED0 /* SoundCloudUI.xcodeproj */,
 				AA0A5BF018AAB82000296494 /* mainTheme.caf */,
 				AADCA97D1878AE56001362A4 /* Lewp */,
 				AADCA99A1878AE56001362A4 /* LewpTests */,
@@ -171,6 +389,7 @@
 		AADCA9741878AE56001362A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA7AC5AF18F0AC0200BEE261 /* Accelerate.framework */,
 				AA35B36618A88444008C4D35 /* GLKit.framework */,
 				AA35B36418A85F2B008C4D35 /* AudioToolbox.framework */,
 				AA35B35C18A6CB82008C4D35 /* AVFoundation.framework */,
@@ -187,6 +406,7 @@
 		AADCA97D1878AE56001362A4 /* Lewp */ = {
 			isa = PBXGroup;
 			children = (
+				AA7AC5CC18F0B00B00BEE261 /* Audio engine */,
 				AADCA9AA1878B03F001362A4 /* mainPhone.storyboard */,
 				AA8A309B18B3CB3B005FBD0F /* ViewControllers */,
 				AADCA9861878AE56001362A4 /* LWPAppDelegate.h */,
@@ -197,10 +417,9 @@
 				AADCA97E1878AE56001362A4 /* Supporting Files */,
 				AA8A309218B27483005FBD0F /* LWPScheduler.h */,
 				AA8A309318B27483005FBD0F /* LWPScheduler.m */,
-				AAE08E7A18AA81DC0033DF62 /* LWPConstants.h */,
-				AAE08E7B18AA81DC0033DF62 /* LWPConstants.m */,
-				AA8A309818B3BC15005FBD0F /* LWPInstrumentArrays.h */,
-				AA8A309918B3BC15005FBD0F /* LWPInstrumentArrays.m */,
+				AA7AC59F18F0ABB000BEE261 /* TheAmazingAudioEngine.xcodeproj */,
+				AAB8752018D751E50055E0B9 /* Crittercism */,
+				AAFE0F7818D3BAB800645EF3 /* Constants */,
 			);
 			path = Lewp;
 			sourceTree = "<group>";
@@ -244,6 +463,17 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		AAFE0F7818D3BAB800645EF3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AAE08E7A18AA81DC0033DF62 /* LWPConstants.h */,
+				AAE08E7B18AA81DC0033DF62 /* LWPConstants.m */,
+				AA8A309818B3BC15005FBD0F /* LWPInstrumentArrays.h */,
+				AA8A309918B3BC15005FBD0F /* LWPInstrumentArrays.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,6 +484,7 @@
 				AADCA96E1878AE56001362A4 /* Sources */,
 				AADCA96F1878AE56001362A4 /* Frameworks */,
 				AADCA9701878AE56001362A4 /* Resources */,
+				AA5FF99A18D7546700894ED0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -307,6 +538,32 @@
 			mainGroup = AADCA9691878AE56001362A4;
 			productRefGroup = AADCA9731878AE56001362A4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AA5FFADC18D7839800894ED0 /* Products */;
+					ProjectRef = AA5FFADB18D7839800894ED0 /* JSONKit.xcodeproj */;
+				},
+				{
+					ProductGroup = AA5FFAD918D7839800894ED0 /* Products */;
+					ProjectRef = AA5FFAD818D7839800894ED0 /* OAuth2Client.xcodeproj */;
+				},
+				{
+					ProductGroup = AA5FFADF18D7839800894ED0 /* Products */;
+					ProjectRef = AA5FFADE18D7839800894ED0 /* OHAttributedLabel.xcodeproj */;
+				},
+				{
+					ProductGroup = AA5FFAD618D7839800894ED0 /* Products */;
+					ProjectRef = AA5FFAD518D7839800894ED0 /* SoundCloudAPI.xcodeproj */;
+				},
+				{
+					ProductGroup = AA5FFAE218D7839800894ED0 /* Products */;
+					ProjectRef = AA5FFAE118D7839800894ED0 /* SoundCloudUI.xcodeproj */;
+				},
+				{
+					ProductGroup = AA7AC5A018F0ABB000BEE261 /* Products */;
+					ProjectRef = AA7AC59F18F0ABB000BEE261 /* TheAmazingAudioEngine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AADCA9711878AE56001362A4 /* Lewp */,
@@ -315,14 +572,89 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		AA5FFAE718D7839900894ED0 /* libJSONKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJSONKit.a;
+			remoteRef = AA5FFAE618D7839900894ED0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA5FFAE918D7839900894ED0 /* JSONKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONKit.framework;
+			remoteRef = AA5FFAE818D7839900894ED0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA5FFAED18D7839900894ED0 /* OAuth2Client.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2Client.framework;
+			remoteRef = AA5FFAEC18D7839900894ED0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA5FFAEF18D7839900894ED0 /* libOAuth2Client.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOAuth2Client.a;
+			remoteRef = AA5FFAEE18D7839900894ED0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA5FFAF218D7839900894ED0 /* libOHAttributedLabel.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOHAttributedLabel.a;
+			remoteRef = AA5FFAF118D7839900894ED0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA5FFAF618D7839900894ED0 /* SoundCloudAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SoundCloudAPI.framework;
+			remoteRef = AA5FFAF518D7839900894ED0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA5FFAF818D7839900894ED0 /* libSoundCloudAPI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoundCloudAPI.a;
+			remoteRef = AA5FFAF718D7839900894ED0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA5FFAFC18D7839900894ED0 /* libSoundCloudUI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoundCloudUI.a;
+			remoteRef = AA5FFAFB18D7839900894ED0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA5FFAFE18D7839900894ED0 /* SoundCloudUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SoundCloudUI.framework;
+			remoteRef = AA5FFAFD18D7839900894ED0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA7AC5AD18F0ABB000BEE261 /* libTheAmazingAudioEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTheAmazingAudioEngine.a;
+			remoteRef = AA7AC5AC18F0ABB000BEE261 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		AADCA9701878AE56001362A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB8752818D753780055E0B9 /* dsym_upload.sh in Resources */,
 				AA0A5BF118AAB82000296494 /* mainTheme.caf in Resources */,
 				AAE08E7818A953740033DF62 /* Settings.bundle in Resources */,
 				AADCA9821878AE56001362A4 /* InfoPlist.strings in Resources */,
+				AA7AC5C918F0B00600BEE261 /* README.markdown in Resources */,
 				AADCA98D1878AE56001362A4 /* Images.xcassets in Resources */,
 				AADCA9AB1878B03F001362A4 /* mainPhone.storyboard in Resources */,
 			);
@@ -338,14 +670,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AA5FF99A18D7546700894ED0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_ID=\"5327088e7c376419f9000002\"\nAPI_KEY=\"jxotqletm2a5kslcgfd8ymzxdhh6vvib\"\nsource ${SRCROOT}/Lewp/dsym_upload.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AADCA96E1878AE56001362A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7AC5CB18F0B00600BEE261 /* TPCircularBuffer.c in Sources */,
+				AA7AC5C318F0B00600BEE261 /* AEExpanderFilter.m in Sources */,
 				AADCA9881878AE56001362A4 /* LWPAppDelegate.m in Sources */,
 				AADCA98B1878AE56001362A4 /* Lewp.xcdatamodeld in Sources */,
 				AAE08E7618A94C8F0033DF62 /* SoundManager.m in Sources */,
+				AA7AC5C818F0B00600BEE261 /* AERecorder.m in Sources */,
 				AAE08E7C18AA81DC0033DF62 /* LWPConstants.m in Sources */,
 				AADCA9AE1878CECD001362A4 /* LWPMainMenuViewController.m in Sources */,
 				AADCA9B4187A0380001362A4 /* LWPEngineersViewController.m in Sources */,
@@ -353,9 +704,14 @@
 				AA3FD4AA18A2BB8B006B400B /* LWPPriorRecordingTableViewController.m in Sources */,
 				AA35B36318A6D48C008C4D35 /* LWPPriorRecordingsItemViewController.m in Sources */,
 				AADCA9B11878D100001362A4 /* LWPOptionsPaneViewController.m in Sources */,
+				AA7AC5C718F0B00600BEE261 /* AEPlaythroughChannel.m in Sources */,
+				AA7AC5CA18F0B00600BEE261 /* TPCircularBuffer+AudioBufferList.c in Sources */,
 				AA8A309A18B3BC15005FBD0F /* LWPInstrumentArrays.m in Sources */,
 				AA8A309418B27483005FBD0F /* LWPScheduler.m in Sources */,
 				AADCA9841878AE56001362A4 /* main.m in Sources */,
+				AA7AC5C518F0B00600BEE261 /* AELimiterFilter.m in Sources */,
+				AA7AC5C618F0B00600BEE261 /* AEMixerBuffer.m in Sources */,
+				AA7AC5C418F0B00600BEE261 /* AELimiter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +786,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = /Users/Ethan/Documents/XCode/Lewp/TheAmazingAudioEngine/TheAmazingAudioEngine;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -464,6 +821,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = /Users/Ethan/Documents/XCode/Lewp/TheAmazingAudioEngine/TheAmazingAudioEngine;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -479,6 +837,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lewp/Lewp-Prefix.pch";
 				INFOPLIST_FILE = "Lewp/Lewp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Ethan/Downloads/Crittercism_v4_3_2/CrittercismSDK,
+					/Users/Ethan/Documents/XCode/Lewp/Lewp,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -492,6 +855,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lewp/Lewp-Prefix.pch";
 				INFOPLIST_FILE = "Lewp/Lewp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Ethan/Downloads/Crittercism_v4_3_2/CrittercismSDK,
+					/Users/Ethan/Documents/XCode/Lewp/Lewp,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

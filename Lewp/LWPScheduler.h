@@ -21,7 +21,7 @@
 
 @end
 
-@interface LWPScheduler : NSObject
+@interface LWPScheduler : NSObject <AVAudioRecorderDelegate>
 @property NSUInteger tempo;
 @property NSString *userName;
 
@@ -35,7 +35,8 @@
 
 +(LWPScheduler*) masterScheduler;
 -(void)startPlaying;
--(NSArray*)getInstrumentOrderWithThisManyAdjectives:(NSUInteger)adjectiveCount;
+-(NSArray*)getInstrumentOrderFromGroup: (NSUInteger)groupIndex
+    andThisManyAdjectives: (NSUInteger)adjectiveCount;
 -(void)recordMeasures:(NSUInteger)measures;
 
 

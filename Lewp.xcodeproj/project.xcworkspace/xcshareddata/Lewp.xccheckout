@@ -10,15 +10,23 @@
 	<string>Lewp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>1ED9346D-4B07-4089-B0EE-DB6952D5C467</key>
+		<string>git://github.com/nxtbgthng/OAuth2Client.git</string>
 		<key>888D9F85-1D28-4541-9DDB-876BE737768E</key>
 		<string>ssh://github.iu.edu/ejgeller/lewp.git</string>
+		<key>DABF6C07-C9C8-474F-814D-042EC37B2DE2</key>
+		<string>https://github.com/TheAmazingAudioEngine/TheAmazingAudioEngine.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Lewp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>1ED9346D-4B07-4089-B0EE-DB6952D5C467</key>
+		<string>../../OAuth2Client</string>
 		<key>888D9F85-1D28-4541-9DDB-876BE737768E</key>
 		<string>../..</string>
+		<key>DABF6C07-C9C8-474F-814D-042EC37B2DE2</key>
+		<string>../../TheAmazingAudioEngine</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.iu.edu/ejgeller/lewp.git</string>
@@ -35,6 +43,22 @@
 			<string>888D9F85-1D28-4541-9DDB-876BE737768E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Lewp</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1ED9346D-4B07-4089-B0EE-DB6952D5C467</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OAuth2Client</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DABF6C07-C9C8-474F-814D-042EC37B2DE2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TheAmazingAudioEngine</string>
 		</dict>
 	</array>
 </dict>
