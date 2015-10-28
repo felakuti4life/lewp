@@ -3,11 +3,11 @@
 //  Lewp
 //
 //  Created by Ethan Geller on 1/4/14.
-//  Copyright (c) 2014 Ethan Geller and Kevin Choumane. All rights reserved.
+//  Copyright (c) 2014 Ethan Geller. All rights reserved.
 //
 
 #import "LWPAppDelegate.h"
-
+#import "SCUI.h"
 @implementation LWPAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -21,6 +21,9 @@
     self.window.backgroundColor = [UIColor redColor];
     [self.window makeKeyAndVisible];
     //[Crittercism enableWithAppID:@"53237f6f647e7565b7000001"];
+    [SCSoundCloud setClientID:@"8293869718a424a7b9ba882160677493"
+                           secret:@"959a46bf717aab847bb5f87ca482faa8"
+                      redirectURL:[NSURL URLWithString:@"sampleproject://oauth"]];
     return YES;
 }
 

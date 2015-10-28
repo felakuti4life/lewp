@@ -3,7 +3,7 @@
 //  Lewp
 //
 //  Created by Ethan Geller on 2/18/14.
-//  Copyright (c) 2014 Ethan Geller and Kevin Choumane. All rights reserved.
+//  Copyright (c) 2014 Ethan Geller. All rights reserved.
 //
 
 #import "LWPInstrumentArrays.h"
@@ -59,21 +59,21 @@
 }
 
 +(NSArray*)adjectivesGroup{
-    return @[@"Beautiful",
-             @"Sinister",
-             @"Enormous",
-             @"Majestic",
-             @"Rollicking",
-             @"Wondorous",
-             @"Monstrous",
-             @"Dubstep-esque",
-             @"Trap-esque",
-             @"Jazz-esque",
-             @"Coffeehouse-esque",
-             @"\"Hardcore\"",
-             @"Futuristic",
-             @"Culture-appropriating",
-             @"Militaristic"
+    return @[@"Beautiful ",
+             @"Sinister ",
+             @"Enormous ",
+             @"Majestic ",
+             @"Rollicking ",
+             @"Wondorous ",
+             @"Monstrous ",
+             @"Dubstep-esque ",
+             @"Trap-esque ",
+             @"Jazz-esque ",
+             @"Coffeehouse-esque ",
+             @"\"Hardcore\" ",
+             @"Futuristic ",
+             @"Culture-appropriating ",
+             @"Militaristic "
              ];
 }
 

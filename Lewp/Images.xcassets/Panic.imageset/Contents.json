@@ -3,12 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "panicAlter-1.png"
+      "filename" : "lewpPanic.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "panicAlter.png"
+      "filename" : "lewpPanic-1.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "lewpPanic-2.png"
     }
   ],
   "info" : {

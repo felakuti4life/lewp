@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="PriorRecordings" syncable="YES">
-        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="songName" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="Settings" syncable="YES">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Options" representedClassName="Options" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tempo" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
     </entity>
+    <entity name="PriorRecordings" representedClassName="PriorRecordings" syncable="YES">
+        <attribute name="cloudID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="djtag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isChallenge" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="songName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tempo" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Settings" positionX="0" positionY="0" width="144" height="73"/>
-        <element name="PriorRecordings" positionX="9" positionY="128" width="128" height="88"/>
+        <element name="PriorRecordings" positionX="9" positionY="128" width="128" height="148"/>
+        <element name="Options" positionX="0" positionY="0" width="144" height="73"/>
     </elements>
 </model>

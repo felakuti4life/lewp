@@ -3,7 +3,7 @@
 //  Lewp
 //
 //  Created by Ethan Geller on 2/18/14.
-//  Copyright (c) 2014 Ethan Geller and Kevin Choumane. All rights reserved.
+//  Copyright (c) 2014 Ethan Geller. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
